@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="col-lg-12">
+      <rd-widget-body>
+        <div class="row">
+          <div class="col-lg-8">
+            <form>
+              <label>Timestamp: </label>
+              <input class="form-control1" type="text" ng-model="datePicker" style="width: 570px;display: inline-block;text-align: center;border: 1px solid #ccc;border-radius: 4px;">
+            </form>
+          </div>
+        </div>
+      </rd-widget-body>
+      
+
+
+    <!--
+    timestamp
+    memory_usage
+    memory_available
+    cpu_usage
+    network_throughput
+      in
+      out
+    network_packet
+      in
+      out
+    errors
+      system
+      sensor
+      component
+    -->
+
+      <rd-widget-body>
+        <div class="row">
+          <div class="col-lg-12">
+            <form>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(1)" value="1">Memory Usage
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(2)" value="2">Memory Available
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(3)" value="3">CPU Usage
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(4)" value="4">Network Throughput
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(5)" value="5">Network Packet
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(6)" value="6">Errors
+              </label>
+            </form>
+          </div>
+        </div>
+      </rd-widget-body>
+    <rd-widget>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <rd-widget>
+      <rd-widget-body>
+        <div class="row">
+          <div id="bar-chart-div" class="col-lg-10"></div>
+        </div>
+      </rd-widget-body>
+    <rd-widget>
+  </div>
+</div>

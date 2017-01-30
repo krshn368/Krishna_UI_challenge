@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-lg-12">
+    <rd-widget>
+      <rd-widget-body>
+        <div class="row">
+          <div class="col-lg-12">
+            <form>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(1)" value="1">Memory Usage
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(2)" value="2">Memory Available
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(3)" value="3">CPU Usage
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(4)" value="4">Network Throughput
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(5)" value="5">Network Packet
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" ng-model="resourceType" ng-click="changeResource(6)" value="6">Errors
+              </label>
+            </form>
+          </div>
+        </div>
+      </rd-widget-body>
+    <rd-widget>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <rd-widget>
+      <rd-widget-body>
+        <div class="row">
+          <div id="line-chart-div" class="col-lg-12" style="height:550px !important;"></div>
+        </div>
+      </rd-widget-body>
+    <rd-widget>
+  </div>
+</div>
